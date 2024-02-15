@@ -1,0 +1,593 @@
+/** Start Media Query **/
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+    header.header nav.navbar .bottom-header .navbar-brand img {max-width: 150px;}
+    .home-banner .item .overlay .h1 {
+        font-size: 65px;
+    }
+    .home-banner .item .overlay h3 {
+        font-size: 30px;
+    }
+    .home-banner .owl-carousel .owl-nav button {
+        width: 55px;
+        height: 55px;
+    }
+    body.body .h2, body.body h2 {
+        font-size: 34px;
+    }
+    .sec-insiration .box-slider .item ul li a {
+        font-size: 16px;
+    }    
+    .sec-life .right-side {
+        padding-left: 2rem;
+    }
+    .sec-our-media .tab-content {
+        min-height: 645px;
+    }    
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .sec-tabs.sec-tabs-why .timeline-list ul li::after {
+        right: 48.5%;
+    }
+    .sec-tabs .right-col {
+        padding: 4rem 0rem 150px 2rem;
+    }
+    .sec-tabs .right-col .bottom-part {
+        padding: 0 3rem;
+    }
+    .sec-tabs .right-col .actions a {
+        font-size: 16px;
+    }
+    
+    header.header nav.navbar .bottom-header .navbar-brand img {
+        max-width: 110px;
+    }
+    header.header nav.navbar .bottom-header ul.navbar-nav .nav-item .nav-link {
+        font-size: 12px;
+    }
+    header.header nav.navbar .bottom-header ul.navbar-nav .nav-item.btn-apply .btn {
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+    .home-banner .item .overlay .h1 {
+        font-size: 55px;
+    }
+    .home-banner .item .overlay h3 {
+        font-size: 26px;
+    }
+    .home-banner .owl-carousel .owl-nav button {
+        width: 55px;
+        height: 55px;
+    }
+    body.body .h2, body.body h2 {
+        font-size: 30px;
+    }
+    .sec-insiration .box-slider .item ul li a {
+        font-size: 16px;
+    }    
+    .sec-life .right-side {
+        padding-left: 2rem;
+    }
+    .sec-announcement {
+        min-height: 740px;
+    }
+    .sec-our-media .tab-content {
+        min-height: 630px;
+    }
+    .sec-leadership .content {
+        width: 100%;
+    }
+    .sec-leadership .box-content .overlay h3 {font-size: 20px;}
+    .sec-leadership .box-content .overlay p {font-size: 14px;line-height: 21px;}
+    .sec-leadership .box-content .img-content {
+        height: 450px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: top; 
+            object-fit: cover;
+        }
+    }
+    .sec-partnerships .logo-list li {height: 188px;}
+    .sec-community .content .btn{width: auto;}
+    .sec-why .img-content {
+        height: 450px;
+    }
+    .sec-administrative .title {width: 100%;}
+}
+@media only screen and (min-width:992px) {
+    header.header nav.navbar .bottom-header .navbar-brand img.mobile-logo {
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .gallery1 .new-col:nth-child(2) .box:first-child{
+        height: 400px;
+    }
+    .gallery1 .new-col:nth-child(2) .box:last-child{
+        height: 220px;
+    }
+    .gallery1 .new-col .box{
+        height: 310px;
+    }
+    .CoBValues li .icon{
+        width: 144px;
+        height: 144px;
+        flex:0 0 144px;
+    }
+    .CoBValues li .icon img{
+        height: 50px;
+    }
+    .hover-gallery .gitem .caption h4{
+        font-size: 16px;
+    }
+    .casp-list-item .img-box{
+        height: 260px;
+    }
+    .contactus-now{
+        min-height: 360px;
+    }
+
+    .table-scroll{
+        overflow-x: auto;
+        table{
+            width: 976px;
+        }
+    }
+
+}
+@media only screen and (max-width:991px) {
+    .sec-tabs.sec-tabs-why .timeline-list ul li::after {
+        right: 48.4%;
+    }
+    .sec-tabs.sec-tabs-why .block-sec .row:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .sec-tabs.sec-tabs-why .block-sec .row {
+        row-gap: 2rem;
+    }
+    .sec-memberships-logos .row {
+        row-gap: 2rem;
+    }
+    .sec-block-memberships .dis {
+        width: 100%;
+    }
+    header.header nav.navbar .bottom-header .navbar-brand img {
+        max-width: 150px;
+    }
+    header.header nav.navbar .top-header {
+        display: none;
+    }
+    header.header nav.navbar .dropdown-trigger.d-none {
+        display: block!important;
+        border: 1px solid#fff;
+        color:  #fff;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    header.header nav.navbar .bottom-header {
+        padding: 10px 0;
+        background-color: $main-color;
+    }
+    .home-banner .item .overlay {
+        padding-top: 81px;
+    }
+    header.header nav.navbar .bottom-header .navbar-brand img.desktop-logo {
+        display: none;
+    }
+    .sec-insiration .box-slider {
+        margin-top: 2rem;
+    }
+    .sec-about {
+        padding: 4rem 0;
+    }
+    .sec-life .right-side {
+        padding-left: 15px;
+        padding-top: 2rem;
+    }
+    .sec-announcement {
+        min-height: auto;
+    }
+    .sec-our-media .tab-content {
+        min-height: auto;
+    }
+    .sec-announcement .slider-col {
+        position: relative;
+        top: 0;
+        padding-top: 2rem;
+    }
+    .sec-announcement .owl-carousel .owl-nav button.owl-next {
+        right: -1rem;
+    }
+    .sec-our-media .owl-carousel .owl-nav button.owl-prev,
+    .sec-announcement .owl-carousel .owl-nav button.owl-prev {
+        left: -1rem;
+    }
+    .sec-our-media .owl-carousel {
+        position: relative;
+    }
+    .sec-our-media .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: -1rem;
+    }
+    .sec-leadership .content {
+        width: 100%;
+    }
+    .sec-leadership .box-content .overlay h3 {font-size: 20px;}
+    .sec-leadership .box-content .overlay p {font-size: 14px;line-height: 21px;}
+    .sec-leadership .box-content .img-content {
+        height: 450px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-position: top; 
+            object-fit: cover;
+        }
+    }
+    .sec-partnerships .logo-list li {height: 188px;}
+    .sec-community .content .btn{width: auto;}
+    
+    .sec-administrative .title {width: 100%;}
+
+    .sec-explore .row,
+    .sec-leadership .row,
+    .sec-history .icons-sec .row {
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .sec-leadership .box-content .title h3 {font-size: 20px;}
+
+    .sec-peldge .overlay,
+    .sec-plan .content .overlay,
+    .sec-why .overlay {
+        position: relative;
+        z-index: 3;
+        padding: 3rem 0;
+    }
+
+    .sec-peldge::before,
+    .sec-why::before {z-index: 2;}
+
+    .sec-peldge .img-content ,
+    .sec-plan .content .img-content,
+    .sec-why .img-content {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .sec-peldge .img-content img,
+    .sec-plan .content .img-content img,
+    .sec-why .img-content img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hover-gallery .gitem:hover{
+        flex:3;
+    }
+    .CoBValues li .icon{
+        width: 90px;
+        height: 90px;
+        flex:0 0 90px;
+    }
+    .CoBValues li .icon img{
+        height: 30px;
+    }
+    .casp-list-item .img-box{
+        height: 190px;
+
+
+    }
+    .info-c li a{
+        padding: 30px 20px;   
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+    body.body h1, body.body .h1 {
+        font-size: 38px;
+    }
+    .sec-tabs .left-col {
+        .list-unstyled {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                width: 50%;
+            }
+        }
+    }
+    .sec-tabs .right-col {
+        padding: 2rem 15px 150px;
+    }
+    .sec-tabs .right-col h1 {
+        font-size: 40px;
+    }
+    .sec-tabs .right-col .bottom-part {
+        padding: 0;
+    }
+    .sec-tabs .right-col .actions a {
+        font-size: 16px;
+    }
+    .home-banner .item .slider-img img {
+        height: 450px;
+    }
+    .home-banner .item .overlay .h1 {
+        font-size: 50px;
+    }
+    .home-banner .item .overlay h3 {
+        font-size: 24px;
+    }
+    .home-banner .owl-carousel .owl-nav button {
+        width: 50px;
+        height: 50px;
+    }
+    .home-banner .item .overlay .row .col-md-7 {
+        width: 90%;
+    }
+    .home-banner {
+        min-height: auto;
+    }
+    body.body .h2, body.body h2 {
+        font-size: 30px;
+    }
+    .sec-insiration .box-slider .item ul li a {
+        font-size: 16px;
+    }   
+    footer .tob-footer .links-footer li a {
+        font-size: 14px;
+    } 
+    footer .tob-footer .links-footer li .sub-links a {
+        font-size: 12px;
+    }
+    .sec-block .signature,
+    .sec-block .text-col .h1 {
+        font-size: 32px;
+    }
+    
+}
+@media only screen and (max-width:767px) {
+    .sec-tabs.sec-tabs-why .timeline-list ul li::after {
+        right: 47%;
+    }
+    body.body h1, body.body .h1 {
+        font-size: 30px;
+    }
+    .sec-tabs .left-col {padding-top: 0;}
+    .sec-tabs .right-col h1 {
+        font-size: 30px;
+    } 
+    .sec-tabs .right-col {
+        padding: 2rem 15px 0;
+    }
+    .sec-tabs .right-col .bottom-part {
+        padding: 0;
+        position: relative;
+    }
+    .sec-tabs .right-col .actions {
+        flex-flow: column;
+        row-gap: 2rem;
+        align-items: center;
+        padding: 1.5rem 15px;
+    }
+    .sec-tabs .right-col .actions::before {
+        display: none;
+    }
+    .sec-tabs .right-col .actions a {
+        font-size: 16px;
+    }
+
+    body.body .h2, body.body h2 {
+        font-size: 30px;
+    }
+    .home-banner {
+        min-height: auto;
+    }
+    .home-banner .item .overlay .h1 {
+        font-size: 50px;
+    }
+    .home-banner .item .overlay h3 {
+        font-size: 18px;
+    }
+    .home-banner .owl-carousel .owl-nav button {
+        width: 40px;
+        height: 40px;
+    }
+    .home-banner .item .overlay {
+        padding: 81px 15px 0;
+    }
+    .home-banner .owl-carousel .owl-nav button {
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .home-banner .owl-carousel .owl-nav {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+    .sec-insiration .box-slider h2 {
+        font-size: 21px;
+    }
+    .sec-insiration .box-slider .btns {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        padding-top: 1rem;
+    }
+    .sec-our-media .owl-carousel .owl-stage {
+        left: 0;
+    }
+    footer .tob-footer .links-footer li a {
+        font-size: 14px;
+    } 
+    footer .tob-footer .links-footer li .sub-links a {
+        font-size: 12px;
+    }
+    footer .tob-footer .footer-logo img {
+        max-width: 150px;
+    }
+    footer .tob-footer .links-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.5rem;
+    }
+    footer .tob-footer .links-footer li {
+        width: 100%;
+    }
+    footer .tob-footer .links-footer li .sub-links {row-gap: 0;}
+    footer .footer-bottom .container {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    footer .tob-footer {
+        padding: 2rem 0;
+    }
+    footer .tob-footer .links-footer li .sub-links {
+        padding-top: 0;
+    }
+    .inner-banner {
+        height: 270px;
+    }
+    .sec-partnerships .nav-pills,
+    .sec-messages .nav-pills {
+        row-gap: 1rem;
+    }
+    .sec-partnerships .nav-item, 
+    .sec-partnerships .nav-link,
+    .sec-messages .nav-pills .nav-item,
+    .sec-messages .nav-pills .nav-link {
+        width: 100%;
+    }
+
+    section.section.sec-plan h2 {
+        font-size: 24px;
+    }
+    .sec-plan .content .overlay .action {
+        flex-flow: column;
+        row-gap: 1rem;
+    }
+    .sec-partnerships .logo-list li {
+        width: 33.3333%;
+        height: auto;
+    }
+    .sec-community .row {
+        row-gap: 1rem;
+    }
+    .sec-administrative .owl-carousel .owl-nav button.owl-next {
+        right: -8px;
+    }
+    .sec-administrative .owl-carousel .owl-nav button.owl-prev {
+        left: -8px;
+    }
+    .sec-administrative .owl-carousel .owl-nav button {
+        width: 45px;
+        height: 45px;
+    }
+    .sec-block .signature,
+    .sec-block .text-col .h1 {
+        font-size: 28px;
+    }
+    
+    section.section.sec-block .row {
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+    section.section.sec-block.img-left .row{
+        flex-direction:column;
+    }
+    body.body  .banner-sec.pt-4 {
+        padding-top: 0!important;
+    }
+    .sec-tabs.sec-tabs-memberships .left-col {
+        padding: 0 !important;
+    }
+
+    .gallery1 .new-col{
+        width: 50%;
+    }
+    .faculty-list li{
+        height: auto;
+        min-height: inherit;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .erservice-list .col-lg-6.col-xl-4{
+        margin-bottom: 20px;
+    }
+    .erservice-list-item{
+        padding: 20px;
+    }
+    .info-c{
+        flex-wrap: wrap;
+    }
+    .info-c li{
+       width: 50%;
+       flex:0 0 50%; 
+       border-bottom: 1px solid #CC3867;
+    }
+    .info-c li:nth-child(2){
+        border-right:0;
+    }
+    .info-c li:nth-child(3), .info-c li:nth-child(4){
+        border-bottom: 0;
+    }
+    .erservice-list .col-lg-6.col-xl-4{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .sec-partnerships{
+        padding: 2rem 0;
+    }
+    .up-list-item{
+        padding: 30px 16px;
+    }
+}
+
+@media(max-width:568px){
+    .gallery1 .new-col{
+        width: 100%;
+    }
+    .gallery1 .new-col .box{
+        height: auto!important;
+    }
+    .it-links-list li .it-links li{
+        width: 100%;
+        flex:0 0 100%;
+    }
+    .hover-gallery{
+        flex-wrap: wrap;
+    }
+    .hover-gallery .gitem{
+        flex:0 0 100%;
+        height:300px;
+    }
+    .hover-gallery .gitem:hover{flex:0 0 100%; height:auto;}
+    .CoBValues li{
+        width: 100%!important;
+        flex:0 0 100%!important;
+    }
+    .CoBValues li:nth-child(4), .CoBValues li:nth-child(5){
+        display: block;
+        text-align: center;
+    }
+    .jigjag{
+        .img-content{
+            margin-bottom: 20px;
+        }
+    }
+    .jigjag .row:last-child{
+        margin-bottom: 0;
+        
+    }
+    
+
+}

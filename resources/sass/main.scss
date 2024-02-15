@@ -1,0 +1,258 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------
+     _                _  _     _                                      _      _                                       _    _
+    | |              ( )| |   | |                                    | |    | |                                     | |  | |
+  __| |  ___   _ __  |/ | |_  | |__    ___    __ _   ___    ___    __| |    | |__    ___    __ _  _ __   ___   __ _ | |_ | |
+ / _` | / _ \ | '_ \    | __| | '_ \  / _ \  / _` | / _ \  / _ \  / _` |    | '_ \  / _ \  / _` || '__| / _ \ / _` || __|| |
+| (_| || (_) || | | |   | |_  | |_) ||  __/ | (_| || (_) || (_) || (_| | _  | |_) ||  __/ | (_| || |   |  __/| (_| || |_ |_|
+ \__,_| \___/ |_| |_|    \__| |_.__/  \___|  \__, | \___/  \___/  \__,_|( ) |_.__/  \___|  \__, ||_|    \___| \__,_| \__|(_)
+                                              __/ |                     |/                  __/ |
+                                             |___/                                         |___/
+ksp----------------------------------------------------------------------------------------------------------------------------
+*/
+
+ //========================================// 
+ // Variables //
+ //========================================//  
+ $main-color: #AB0A3D !default;
+ $gary-color: #8C9091 !default;
+ $text-color: #000000 !default;
+ $light-color:#FFFFFF !default; 
+
+
+ // Documentation starts here
+ // --------------------------------------------
+ // * Global...............Globally-available variables and config.
+ * {
+     padding: 0;
+     margin: 0;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-overflow-scrolling: touch;
+ }
+
+ html {
+     height: 100%;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ ::-webkit-input-placeholder,
+ input::-webkit-input-placeholder {
+     color: $gary-color;
+ }
+
+ ::-moz-placeholder,
+ input::-webkit-input-placeholder {
+     color: $gary-color;
+ }
+
+ :-ms-input-placeholder,
+ input:-ms-input-placeholder {
+     color: $gary-color;
+ }
+
+ :-moz-placeholder,
+ input:-moz-placeholder {
+     color: $gary-color;
+ }
+
+ /* Let's get this party started */
+
+ ::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ /* Track */
+
+ ::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+ }
+
+ /* Handle */
+
+ ::-webkit-scrollbar-thumb {
+     border-radius: 8px;
+     background-color: $text-color;
+     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+     &:window-inactive {
+         background-color: $text-color;
+     }
+ }
+
+ body.body {
+    font-family: 'Ubuntu', sans-serif;
+     font-weight: 400;
+     min-height: 100%;
+     color: $text-color;
+     display: flex;
+     line-height: 1.5;
+     font-size: 16px;
+     overflow: hidden auto;
+
+     a { 
+         transition: all 0.3s linear;
+         text-decoration: none;
+         color: inherit;
+         &:hover,
+         &:focus {
+             outline: none !important;
+             box-shadow: none;
+             text-decoration: none;
+         }
+     }
+
+     .btn {
+        border-radius: 5px;
+        padding: 12px 40px;
+        letter-spacing: 0.015em;
+        font-size: 15px;
+        font-weight: normal;
+        &.btn-default {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            color: #fff;
+            &:hover {
+                background-color: transparent;
+                color: $main-color;
+            }
+        }
+        &.btn-light {
+            background-color: transparent;
+            border: 1px solid $main-color;
+            color: $main-color;
+            &:hover {
+                background-color: $main-color;
+                color: #fff;
+            }
+        }
+        &.btn-white {
+            background-color: #fff;
+            border: 1px solid #fff;
+            color: #000;
+            &:hover {
+                background-color: $main-color;
+                color: #fff;
+                border-color: $main-color;
+            }
+        }
+        &.btn-white-outline {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            &:hover {
+                background-color: $main-color;
+                color: #fff;
+                border-color: $main-color;
+            }
+        }
+        &.btn-main {
+            background-color: #fff;
+            border: 1px solid #fff;
+            color: $main-color;
+            &:hover {
+                background-color: $main-color;
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+     }
+
+     p {
+        line-height: 28.03px;
+        letter-spacing: 0.015em;
+     }
+     h1,
+     .h1 {
+        font-size: 44px;
+        text-transform: uppercase;
+        font-weight: 700;
+     }
+
+     .h2,
+     h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+     }
+     .h3, h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .h4, h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .h5, h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+     .mb-4 {
+        margin-bottom: 2rem !important;
+    }
+    .pt-4 {
+        padding-top: 4rem!important;
+    }
+    .pb-4 {
+        padding-bottom: 4rem!important;
+    }
+
+ }
+
+ main {
+     position: relative;
+     flex: 1 0 auto;
+ }
+ 
+
+ .padR-0 {
+     padding-right: 0;
+ }
+
+ .padL-0 {
+     padding-left: 0;
+ }
+
+ .pad-0 {
+     padding: 0;
+ }
+
+ .pad-15 {
+     padding: 15px;
+ }
+
+ .pd-50 {
+     padding: 50px 0;
+ }
+
+ // * Global...............Globally-available Reusable LAYOUTS.
+ .page-wrapper {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     min-height: 100vh;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .main {
+     z-index: 2;
+     position: relative;
+ }
+ 
+ // Let the site building begin
+ // --------------------------------------------
+
+ @import "mixin-variables";
+ @import "plugins";
+ @import "pages/fonts";
+ @import "pages/header";
+ @import "pages/home";
+ @import "pages/inner-pages";
+ @import "pages/responsive";

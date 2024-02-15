@@ -1,0 +1,25 @@
+//Bootstrap styles 
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Custom mixins
+@import "mixins/mixins";
+
+//Custom settings --
+@import "settings";
+
+//Component specific styles 
+@import "components/callout";
+
+@import "vendors/example";
+
+@import "vendors/font-awsome-all";
+
+// @import "vendors/aos.css";
+
+// @import "vendors/slick.css";
+
+// @import "vendors/fancybox.min.css";
+
+// @import "vendors/owl.carousel.min.css";
+
+// @import "vendors/owl.theme.default.min.css";

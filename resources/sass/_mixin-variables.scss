@@ -1,0 +1,290 @@
+ /* Variables start here  */
+$baseurl: "../media"; // base url define for accessing images directly background-image:url(#{$baseurl}/image.png);
+$brand: #1a80c3;
+
+$breakpoints: (
+	'extra-small': (max-width: 320px),
+  	'small': (max-width: 480px),
+  	'medium': (max-width: 767px),
+  	'from-medium': (min-width: 768px),  
+  	'large': (max-width: 991px),
+  	'extra-large': (max-width: 1200px)
+)!default;
+
+
+// * TOOLS
+// * Mixins...............Useful mixins.
+
+// Mixin for font & 
+// --------------------------------------------------------------------------------------
+@mixin font1r() {
+	font-family: 'Merriweather-regular';
+}
+
+
+// Mixin For Border Radius
+// --------------------------------------------------------------------------------------
+@mixin border-radius($radius) {
+        border-top-right-radius: $radius;
+        border-top-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+        border-bottom-left-radius: $radius;
+}
+
+// Mixin For Generic Transform
+// --------------------------------------------------------------------------------------
+@mixin transform($transforms) {
+        -moz-transform: $transforms;
+        -o-transform: $transforms;
+        -ms-transform: $transforms;
+        -webkit-transform: $transforms;
+        transform: $transforms;
+}
+
+// 1.3.9
+// Mixin for fontawesome
+// -------------------------------------------------------------------------
+@mixin fontawesome() {
+        display: inline-block;
+        font-family: Font Awesome\ 5 Pro;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+// Mixin to add placeholder color
+// -------------------------------------------------------------------------
+@mixin placeholder-color($color){
+    ::-webkit-input-placeholder {
+       color: $color;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: $color;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: $color;  
+    }
+
+    :-ms-input-placeholder {  
+       color: $color;  
+    }
+}
+
+
+
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  }
+  
+  // The 'flex' shorthand
+  // - applies to: flex items
+  // <positive-number>, initial, auto, or none
+  @mixin flex($values) {
+	-webkit-box-flex: $values;
+	   -moz-box-flex: $values;
+		-webkit-flex: $values;
+		  -ms-flex: $values;
+			  flex: $values;
+  }
+  
+  // Flex Flow Direction
+  // - applies to: flex containers
+  // row | row-reverse | column | column-reverse
+  @mixin flex-direction($direction) {
+	-webkit-flex-direction: $direction;
+	   -moz-flex-direction: $direction;
+		-ms-flex-direction: $direction;
+			flex-direction: $direction;
+  }
+  
+  // Flex Line Wrapping
+  // - applies to: flex containers
+  // nowrap | wrap | wrap-reverse
+  @mixin flex-wrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+	   -moz-flex-wrap: $wrap;
+		-ms-flex-wrap: $wrap;
+			flex-wrap: $wrap;
+  }
+  
+  // Flex Direction and Wrap
+  // - applies to: flex containers
+  // <flex-direction> || <flex-wrap>
+  @mixin flex-flow($flow) {
+	-webkit-flex-flow: $flow;
+	   -moz-flex-flow: $flow;
+		-ms-flex-flow: $flow;
+			flex-flow: $flow;
+  }
+  
+  // Display Order
+  // - applies to: flex items
+  // <integer>
+  @mixin order($val) {
+	-webkit-box-ordinal-group: $val;  
+	   -moz-box-ordinal-group: $val;     
+			 -ms-flex-order: $val;     
+			  -webkit-order: $val;  
+				  order: $val;
+  }
+  
+  // Flex grow factor
+  // - applies to: flex items
+  // <number>
+  @mixin flex-grow($grow) {
+	-webkit-flex-grow: $grow;
+	   -moz-flex-grow: $grow;
+		-ms-flex-grow: $grow;
+			flex-grow: $grow;
+  }
+  
+  // Flex shrink
+  // - applies to: flex item shrink factor
+  // <number> 
+  @mixin flex-shrink($shrink) {
+	-webkit-flex-shrink: $shrink;
+	   -moz-flex-shrink: $shrink;
+		-ms-flex-shrink: $shrink;
+			flex-shrink: $shrink;
+  }
+  
+  // Flex basis
+  // - the initial main size of the flex item
+  // - applies to: flex itemsnitial main size of the flex item
+  // <width> 
+  @mixin flex-basis($width) {
+	-webkit-flex-basis: $width;
+	   -moz-flex-basis: $width;
+		-ms-flex-basis: $width;
+			flex-basis: $width;
+  }
+  
+  // Axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | space-between | space-around 
+  @mixin justify-content($justify) {
+	-webkit-justify-content: $justify;
+	   -moz-justify-content: $justify;
+		-ms-justify-content: $justify;
+			justify-content: $justify;
+			  -ms-flex-pack: $justify;
+  }
+  
+  // Packing Flex Lines
+  // - applies to: multi-line flex containers
+  // flex-start | flex-end | center | space-between | space-around | stretch 
+  @mixin align-content($align) {
+	-webkit-align-content: $align;
+	   -moz-align-content: $align;
+		-ms-align-content: $align;
+			align-content: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | baseline | stretch 
+  @mixin align-items($align) {
+	-webkit-align-items: $align;
+	   -moz-align-items: $align;
+		-ms-align-items: $align;
+			align-items: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex items
+  // auto | flex-start | flex-end | center | baseline | stretch 
+  @mixin align-self($align) {
+	-webkit-align-self: $align;
+	   -moz-align-self: $align;
+		-ms-align-self: $align;
+			align-self: $align;
+  }
+
+// Mixin to change value to rem
+// -------------------------------------------------------------------------
+@function parseInt($n) {
+	/* 2 */
+	@return $n / ($n * 0+1);
+}
+
+@mixin rem($property,$values) {
+	$px: ();
+	/* 3 */
+	$rem: ();
+	/* 3 */
+	@each $value in $values {
+		/* 4 */
+		@if $value==0 or $value==auto {
+			/* 5 */
+			$px: append($px, $value);
+			$rem: append($rem, $value);
+		}
+		@else {
+			$unit: unit($value);
+			/* 6 */
+			$val: parseInt($value);
+			/* 6 */
+			@if $unit=="px" {
+				/* 7 */
+				$px: append($px, $value);
+				$rem: append($rem, ($val / 10+ rem));
+			}
+			@if $unit=="rem" {
+				/* 7 */
+				$px: append($px, ($val * 10+ px));
+				$rem: append($rem, $value);
+			}
+		}
+	}
+	@if $px==$rem {
+		/* 8 */
+		#{$property}: $px;
+		/* 9 */
+	}
+	@else {
+		#{$property}: $px;
+		/* 9 */
+		#{$property}: $rem;
+		/* 9 */
+	}
+}
+
+// Mixin For Skew
+// --------------------------------------------------------------------------------------
+@mixin skew ($x,$y) {
+    @include transform(skew(#{$x}deg,#{$y}deg));
+}
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin breakpoint($name) {
+  	// If the key exists in the map
+  	@if map-has-key($breakpoints, $name) {
+    		// Prints a media query based on the value
+    		@media #{inspect(map-get($breakpoints, $name))} {
+      			@content;
+    		}
+  	}
+
+  	// If the key doesn't exist in the map
+  	@else {
+    		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        	+ "Please make sure it is defined in `$breakpoints` map.";
+  	}
+}
+
